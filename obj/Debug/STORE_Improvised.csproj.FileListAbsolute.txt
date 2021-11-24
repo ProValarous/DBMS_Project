@@ -1,0 +1,11 @@
+C:\Users\IDEAL COMPUTER'S\Documents\GitHub\STORE_Improvised\bin\Debug\STORE_Improvised.exe.config
+C:\Users\IDEAL COMPUTER'S\Documents\GitHub\STORE_Improvised\bin\Debug\STORE_Improvised.exe
+C:\Users\IDEAL COMPUTER'S\Documents\GitHub\STORE_Improvised\bin\Debug\STORE_Improvised.pdb
+C:\Users\IDEAL COMPUTER'S\Documents\GitHub\STORE_Improvised\obj\Debug\STORE_Improvised.csproj.AssemblyReference.cache
+C:\Users\IDEAL COMPUTER'S\Documents\GitHub\STORE_Improvised\obj\Debug\STORE_Improvised.Form1.resources
+C:\Users\IDEAL COMPUTER'S\Documents\GitHub\STORE_Improvised\obj\Debug\STORE_Improvised.Properties.Resources.resources
+C:\Users\IDEAL COMPUTER'S\Documents\GitHub\STORE_Improvised\obj\Debug\STORE_Improvised.csproj.GenerateResource.cache
+C:\Users\IDEAL COMPUTER'S\Documents\GitHub\STORE_Improvised\obj\Debug\STORE_Improvised.csproj.CoreCompileInputs.cache
+C:\Users\IDEAL COMPUTER'S\Documents\GitHub\STORE_Improvised\obj\Debug\STORE_Improvised.exe
+C:\Users\IDEAL COMPUTER'S\Documents\GitHub\STORE_Improvised\obj\Debug\STORE_Improvised.pdb
+C:\Users\IDEAL COMPUTER'S\Documents\GitHub\STORE_Improvised\obj\Debug\STORE_Improvised.Form2.resources
