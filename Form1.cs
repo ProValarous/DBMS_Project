@@ -41,5 +41,10 @@ namespace STORE_Improvised
         {
 
         }
+
+        private void tabPage2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
