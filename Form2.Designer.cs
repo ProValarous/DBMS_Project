@@ -30,7 +30,7 @@ namespace STORE_Improvised
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
-            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
+            this.acountName = new System.Windows.Forms.LinkLabel();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
@@ -54,19 +54,19 @@ namespace STORE_Improvised
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
-            // linkLabel2
+            // acountName
             // 
-            this.linkLabel2.AutoSize = true;
-            this.linkLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.linkLabel2.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel2.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.linkLabel2.LinkColor = System.Drawing.Color.GhostWhite;
-            this.linkLabel2.Location = new System.Drawing.Point(675, 26);
-            this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(84, 19);
-            this.linkLabel2.TabIndex = 2;
-            this.linkLabel2.TabStop = true;
-            this.linkLabel2.Text = "UserAccount";
+            this.acountName.AutoSize = true;
+            this.acountName.BackColor = System.Drawing.Color.Transparent;
+            this.acountName.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.acountName.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.acountName.LinkColor = System.Drawing.Color.GhostWhite;
+            this.acountName.Location = new System.Drawing.Point(675, 26);
+            this.acountName.Name = "acountName";
+            this.acountName.Size = new System.Drawing.Size(84, 19);
+            this.acountName.TabIndex = 2;
+            this.acountName.TabStop = true;
+            this.acountName.Text = "UserAccount";
             // 
             // comboBox1
             // 
@@ -329,9 +329,10 @@ namespace STORE_Improvised
             this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.linkLabel2);
+            this.Controls.Add(this.acountName);
             this.Name = "Form2";
             this.Text = "Store";
+            this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -341,7 +342,7 @@ namespace STORE_Improvised
         }
 
         #endregion
-        private System.Windows.Forms.LinkLabel linkLabel2;
+        public System.Windows.Forms.LinkLabel acountName;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.RadioButton radioButton1;
