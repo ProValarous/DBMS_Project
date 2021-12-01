@@ -67,16 +67,46 @@ namespace STORE_Improvised
 
             if (con.State == System.Data.ConnectionState.Open)
             {
-                string q = "INSERT INTO Users(Wallet_idWallet, Username, Date_of_birth, country, sex, email, User_password) VALUES(" + 1 + ",'" + Username.Text.ToString() + "','" + DOB.Text.ToString() + "','" + Country.Text.ToString() + "','" + sex.Text.ToString() + "','" + Email.Text.ToString()+ "','" + Pword.Text.ToString() + "')";
+                string q0 = "INSERT INTO Wallet(Amount) VALUES("+0+")";
+
+                SqlCommand cmd0 = new SqlCommand(q0, con);
+                cmd0.ExecuteNonQuery();
+
+
+                string q = "INSERT INTO Users(Wallet_idWallet, Username, Date_of_birth, country, sex, email, User_password) VALUES(" + "(select top 1 idWallet from Wallet order by idWallet DESC)" + ",'" + Username.Text.ToString() + "','" + DOB.Text.ToString() + "','" + Country.Text.ToString() + "','" + sex.Text.ToString() + "','" + Email.Text.ToString()+ "','" + Pword.Text.ToString() + "')";
 
                 SqlCommand cmd = new SqlCommand(q, con);
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Connection Made!");
+
+
+                this.Hide();
+                Form3 f = new Form3();
+
+                //get wallet
+                //string q = "INSERT INTO Users(Wallet_idWallet, Username, Date_of_birth, country, sex, email, User_password) VALUES(" + 1 + ",'" + Username.Text.ToString() + "','" + DOB.Text.ToString() + "','" + Country.Text.ToString() + "','" + sex.Text.ToString() + "','" + Email.Text.ToString() + "','" + Pword.Text.ToString() + "')";
+
+
+                string q1 = "select Amount from Wallet where idWallet = " + "(select Wallet_idWallet from Users where Username = '" + Username.Text.ToString() + "')";
+
+                SqlCommand cmd1 = new SqlCommand(q1, con);
+
+                SqlDataReader w = cmd1.ExecuteReader();
+
+                while (w.Read())
+                {
+                    f.walletAmount.Text = w.GetValue(0).ToString();
+                }
+
+
+                //get user name
+                f.account.Text = Username.Text.ToString();
+
+                //switch form
+                f.Show();
             }
-            this.Hide();
-            Form2 f = new Form2();
-            f.acountName.Text = Username.Text.ToString();
-            f.Show();
+
+            
         }
 
         private void maskedTextBox1_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
@@ -102,6 +132,76 @@ namespace STORE_Improvised
         private void label9_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            SqlConnection con = new SqlConnection(conString);
+            con.Open();
+
+            if (con.State == System.Data.ConnectionState.Open)
+            {
+                /*
+                string q0 = "INSERT INTO Wallet(Amount) VALUES(" + 0 + ")";
+
+                SqlCommand cmd0 = new SqlCommand(q0, con);
+                cmd0.ExecuteNonQuery();
+                */
+
+                //string q = "INSERT INTO Users(Wallet_idWallet, Username, Date_of_birth, country, sex, email, User_password) VALUES(" + "(select top 1 idWallet from Wallet order by idWallet DESC)" + ",'" + Username.Text.ToString() + "','" + DOB.Text.ToString() + "','" + Country.Text.ToString() + "','" + sex.Text.ToString() + "','" + Email.Text.ToString() + "','" + Pword.Text.ToString() + "')";
+
+                
+                //w.Close();
+
+                string q1 = "select User_password from Users where Username = '" + loginUsername.Text.ToString() + "'";
+
+
+                SqlCommand cmd1 = new SqlCommand(q1, con);
+
+                SqlDataReader p = cmd1.ExecuteReader();
+
+                string pass = "invalid";
+
+                while (p.Read())
+                {
+                    pass = p.GetValue(0).ToString();
+                }
+
+                if (pass == loginPword.Text.ToString())
+                    {
+                        p.Close();
+
+                        string q = "select Amount from Wallet where idWallet = (select Wallet_idWallet from Users where Username = '" + loginUsername.Text.ToString() + "')";
+
+                        SqlCommand cmd = new SqlCommand(q, con);
+
+                        SqlDataReader w = cmd.ExecuteReader();
+
+
+                        this.Hide();
+                        Form3 f = new Form3();
+
+                        while (w.Read())
+                        {
+                            f.walletAmount.Text = w.GetValue(0).ToString();
+                        }
+
+                        //get user name
+                        f.account.Text = loginUsername.Text.ToString();
+
+                        //switch form
+                        f.Show();
+                    }
+                
+                MessageBox.Show("Connection Made!");
+            }
+
+            
         }
     }
 }

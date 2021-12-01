@@ -49,8 +49,8 @@ namespace STORE_Improvised
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.button2 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.loginPword = new System.Windows.Forms.TextBox();
+            this.loginUsername = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -225,8 +225,8 @@ namespace STORE_Improvised
             this.tabPage2.BackColor = System.Drawing.Color.DarkGray;
             this.tabPage2.Controls.Add(this.button2);
             this.tabPage2.Controls.Add(this.label5);
-            this.tabPage2.Controls.Add(this.textBox4);
-            this.tabPage2.Controls.Add(this.textBox5);
+            this.tabPage2.Controls.Add(this.loginPword);
+            this.tabPage2.Controls.Add(this.loginUsername);
             this.tabPage2.Controls.Add(this.label6);
             this.tabPage2.Location = new System.Drawing.Point(4, 24);
             this.tabPage2.Name = "tabPage2";
@@ -244,6 +244,7 @@ namespace STORE_Improvised
             this.button2.TabIndex = 14;
             this.button2.Text = "Login";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label5
             // 
@@ -255,19 +256,20 @@ namespace STORE_Improvised
             this.label5.TabIndex = 13;
             this.label5.Text = "Password";
             // 
-            // textBox4
+            // loginPword
             // 
-            this.textBox4.Location = new System.Drawing.Point(111, 128);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(226, 22);
-            this.textBox4.TabIndex = 12;
+            this.loginPword.Location = new System.Drawing.Point(111, 128);
+            this.loginPword.Name = "loginPword";
+            this.loginPword.Size = new System.Drawing.Size(226, 22);
+            this.loginPword.TabIndex = 12;
             // 
-            // textBox5
+            // loginUsername
             // 
-            this.textBox5.Location = new System.Drawing.Point(111, 79);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(226, 22);
-            this.textBox5.TabIndex = 10;
+            this.loginUsername.Location = new System.Drawing.Point(110, 79);
+            this.loginUsername.Name = "loginUsername";
+            this.loginUsername.Size = new System.Drawing.Size(226, 22);
+            this.loginUsername.TabIndex = 10;
+            this.loginUsername.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
             // label6
             // 
@@ -315,8 +317,8 @@ namespace STORE_Improvised
         private System.Windows.Forms.Button register;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox loginPword;
+        private System.Windows.Forms.TextBox loginUsername;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox sex;
         private System.Windows.Forms.TextBox Country;
