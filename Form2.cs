@@ -16,6 +16,8 @@ namespace STORE_Improvised
         public Form2()
         {
             InitializeComponent();
+
+
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -59,6 +61,16 @@ namespace STORE_Improvised
         }
 
         private void Form2_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void store_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
         {
 
         }

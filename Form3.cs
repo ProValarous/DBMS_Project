@@ -18,6 +18,9 @@ namespace STORE_Improvised
             InitializeComponent();
         }
 
+        public string conString = "Data Source=NITRO-PC;Initial Catalog=EPIC;Integrated Security=True";
+
+
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
 
@@ -95,8 +98,21 @@ namespace STORE_Improvised
 
         private void button5_Click(object sender, EventArgs e)
         {
+            SqlConnection con = new SqlConnection(conString);
+            con.Open();
+
             this.Hide();
             Form2 f = new Form2();
+
+            string q2 = "select game_name,Game_description  from game ";
+            SqlDataAdapter cmd2 = new SqlDataAdapter(q2, con);
+
+            DataTable dbt = new DataTable();
+
+            cmd2.Fill(dbt);
+
+            f.store.DataSource = dbt;
+
 
             //switch form
             f.Show();
