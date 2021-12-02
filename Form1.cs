@@ -98,6 +98,16 @@ namespace STORE_Improvised
                     f.walletAmount.Text = w.GetValue(0).ToString();
                 }
 
+                w.Close();
+
+                string q2 = "select game_name from game g inner join library l on g.idGame = l.Game_idGame inner join users u on l.Users_idUsers = u.idUsers where Username = '" + Username.Text.ToString() + "'";
+                SqlDataAdapter cmd2 = new SqlDataAdapter(q2, con);
+
+                DataTable dbt = new DataTable();
+
+                cmd2.Fill(dbt);
+
+                f.dataGrid.DataSource = dbt;
 
                 //get user name
                 f.account.Text = Username.Text.ToString();
@@ -190,9 +200,20 @@ namespace STORE_Improvised
                         {
                             f.walletAmount.Text = w.GetValue(0).ToString();
                         }
+                    w.Close();
 
-                        //get user name
-                        f.account.Text = loginUsername.Text.ToString();
+                    string q2 = "select game_name from game g inner join library l on g.idGame = l.Game_idGame inner join users u on l.Users_idUsers = u.idUsers where Username = '"+ loginUsername.Text.ToString() + "'";
+                    SqlDataAdapter cmd2 = new SqlDataAdapter(q2, con);
+
+                    DataTable dbt = new DataTable();
+
+                    cmd2.Fill(dbt);
+
+                    f.dataGrid.DataSource = dbt;
+
+
+                    //get user name
+                    f.account.Text = loginUsername.Text.ToString();
 
                         //switch form
                         f.Show();

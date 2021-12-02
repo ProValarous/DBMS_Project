@@ -37,12 +37,22 @@ namespace STORE_Improvised
             this.button2 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.toStore = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
+            this.walletAmount = new System.Windows.Forms.Label();
+            this.dataGrid = new System.Windows.Forms.DataGridView();
+            this.button3 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
-            this.walletAmount = new System.Windows.Forms.Label();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
+            this.button13 = new System.Windows.Forms.Button();
+            this.button14 = new System.Windows.Forms.Button();
+            this.button15 = new System.Windows.Forms.Button();
+            this.button16 = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGrid)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -104,9 +114,9 @@ namespace STORE_Improvised
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(83, 233);
+            this.button4.Location = new System.Drawing.Point(268, 247);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.Size = new System.Drawing.Size(55, 18);
             this.button4.TabIndex = 26;
             this.button4.Text = "PLAY";
             this.button4.UseVisualStyleBackColor = true;
@@ -122,61 +132,6 @@ namespace STORE_Improvised
             this.toStore.UseVisualStyleBackColor = true;
             this.toStore.Click += new System.EventHandler(this.button5_Click);
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label3.Location = new System.Drawing.Point(62, 193);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(131, 26);
-            this.label3.TabIndex = 30;
-            this.label3.Text = "Dark Souls 3";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
-            // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(83, 273);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 23);
-            this.button6.TabIndex = 31;
-            this.button6.Text = "View Info";
-            this.button6.UseVisualStyleBackColor = true;
-            // 
-            // button7
-            // 
-            this.button7.Location = new System.Drawing.Point(256, 273);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(75, 23);
-            this.button7.TabIndex = 36;
-            this.button7.Text = "View Info";
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label6.Location = new System.Drawing.Point(232, 193);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(132, 26);
-            this.label6.TabIndex = 35;
-            this.label6.Text = "Halo Infinite";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
-            // 
-            // button8
-            // 
-            this.button8.Location = new System.Drawing.Point(256, 233);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(75, 23);
-            this.button8.TabIndex = 33;
-            this.button8.Text = "PLAY";
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
-            // 
             // walletAmount
             // 
             this.walletAmount.AutoSize = true;
@@ -189,18 +144,152 @@ namespace STORE_Improvised
             this.walletAmount.TabIndex = 22;
             this.walletAmount.Text = "$635,354";
             // 
+            // dataGrid
+            // 
+            this.dataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGrid.Location = new System.Drawing.Point(67, 127);
+            this.dataGrid.Name = "dataGrid";
+            this.dataGrid.Size = new System.Drawing.Size(195, 370);
+            this.dataGrid.TabIndex = 59;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(268, 151);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(55, 18);
+            this.button3.TabIndex = 60;
+            this.button3.Text = "PLAY";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(268, 175);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(55, 18);
+            this.button6.TabIndex = 61;
+            this.button6.Text = "PLAY";
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(268, 199);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(55, 18);
+            this.button7.TabIndex = 62;
+            this.button7.Text = "PLAY";
+            this.button7.UseVisualStyleBackColor = true;
+            // 
+            // button9
+            // 
+            this.button9.Location = new System.Drawing.Point(268, 223);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(55, 18);
+            this.button9.TabIndex = 63;
+            this.button9.Text = "PLAY";
+            this.button9.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(268, 271);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(55, 18);
+            this.button5.TabIndex = 64;
+            this.button5.Text = "PLAY";
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(268, 295);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(55, 18);
+            this.button8.TabIndex = 65;
+            this.button8.Text = "PLAY";
+            this.button8.UseVisualStyleBackColor = true;
+            // 
+            // button10
+            // 
+            this.button10.Location = new System.Drawing.Point(268, 319);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(55, 18);
+            this.button10.TabIndex = 66;
+            this.button10.Text = "PLAY";
+            this.button10.UseVisualStyleBackColor = true;
+            // 
+            // button11
+            // 
+            this.button11.Location = new System.Drawing.Point(268, 343);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(55, 18);
+            this.button11.TabIndex = 67;
+            this.button11.Text = "PLAY";
+            this.button11.UseVisualStyleBackColor = true;
+            // 
+            // button12
+            // 
+            this.button12.Location = new System.Drawing.Point(268, 367);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(55, 18);
+            this.button12.TabIndex = 68;
+            this.button12.Text = "PLAY";
+            this.button12.UseVisualStyleBackColor = true;
+            // 
+            // button13
+            // 
+            this.button13.Location = new System.Drawing.Point(268, 391);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(55, 18);
+            this.button13.TabIndex = 69;
+            this.button13.Text = "PLAY";
+            this.button13.UseVisualStyleBackColor = true;
+            // 
+            // button14
+            // 
+            this.button14.Location = new System.Drawing.Point(268, 415);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(55, 18);
+            this.button14.TabIndex = 70;
+            this.button14.Text = "PLAY";
+            this.button14.UseVisualStyleBackColor = true;
+            // 
+            // button15
+            // 
+            this.button15.Location = new System.Drawing.Point(268, 439);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(55, 18);
+            this.button15.TabIndex = 71;
+            this.button15.Text = "PLAY";
+            this.button15.UseVisualStyleBackColor = true;
+            // 
+            // button16
+            // 
+            this.button16.Location = new System.Drawing.Point(268, 463);
+            this.button16.Name = "button16";
+            this.button16.Size = new System.Drawing.Size(55, 18);
+            this.button16.TabIndex = 72;
+            this.button16.Text = "PLAY";
+            this.button16.UseVisualStyleBackColor = true;
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1452, 696);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.label6);
+            this.ClientSize = new System.Drawing.Size(933, 509);
+            this.Controls.Add(this.button16);
+            this.Controls.Add(this.button15);
+            this.Controls.Add(this.button14);
+            this.Controls.Add(this.button13);
+            this.Controls.Add(this.button12);
+            this.Controls.Add(this.button11);
+            this.Controls.Add(this.button10);
             this.Controls.Add(this.button8);
+            this.Controls.Add(this.button5);
+            this.Controls.Add(this.button9);
+            this.Controls.Add(this.button7);
             this.Controls.Add(this.button6);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.dataGrid);
             this.Controls.Add(this.toStore);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button2);
@@ -211,6 +300,7 @@ namespace STORE_Improvised
             this.Controls.Add(this.label1);
             this.Name = "Form3";
             this.Text = "Seller";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGrid)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -225,11 +315,20 @@ namespace STORE_Improvised
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button toStore;
-        private System.Windows.Forms.Label label3;
+        public System.Windows.Forms.Label walletAmount;
+        public System.Windows.Forms.DataGridView dataGrid;
+        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button8;
-        public System.Windows.Forms.Label walletAmount;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Button button15;
+        private System.Windows.Forms.Button button16;
     }
 }

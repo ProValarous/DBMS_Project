@@ -95,7 +95,11 @@ namespace STORE_Improvised
 
         private void button5_Click(object sender, EventArgs e)
         {
+            this.Hide();
+            Form2 f = new Form2();
 
+            //switch form
+            f.Show();
         }
 
         private void label1_Click(object sender, EventArgs e)
