@@ -22,3 +22,4 @@ C:\Users\Mutaba\source\repos\STORE_Improvised\obj\Debug\STORE_Improvised.csproj.
 C:\Users\Mutaba\source\repos\STORE_Improvised\obj\Debug\STORE_Improvised.csproj.CoreCompileInputs.cache
 C:\Users\Mutaba\source\repos\STORE_Improvised\obj\Debug\STORE_Improvised.exe
 C:\Users\Mutaba\source\repos\STORE_Improvised\obj\Debug\STORE_Improvised.pdb
+C:\Users\Mutaba\source\repos\STORE_Improvised\obj\Debug\STORE_Improvised.Form4.resources

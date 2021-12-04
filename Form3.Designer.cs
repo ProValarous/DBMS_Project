@@ -81,6 +81,7 @@ namespace STORE_Improvised
             this.account.TabIndex = 18;
             this.account.TabStop = true;
             this.account.Text = "UserAccount";
+            this.account.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.account_LinkClicked);
             // 
             // label4
             // 

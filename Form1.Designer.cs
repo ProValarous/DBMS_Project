@@ -1,6 +1,11 @@
 ﻿
+
 namespace STORE_Improvised
 {
+    class User
+    {
+        public string name;
+    }
     partial class Form1
     {
         /// <summary>

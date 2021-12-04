@@ -104,7 +104,7 @@ namespace STORE_Improvised
             this.Hide();
             Form2 f = new Form2();
 
-            string q2 = "select game_name,Game_description  from game ";
+            string q2 = "select game_name, Game_description, Rating, Price  from game ";
             SqlDataAdapter cmd2 = new SqlDataAdapter(q2, con);
 
             DataTable dbt = new DataTable();
@@ -112,6 +112,7 @@ namespace STORE_Improvised
             cmd2.Fill(dbt);
 
             f.store.DataSource = dbt;
+            f.acountName.Text = account.Text;
 
 
             //switch form
@@ -124,6 +125,11 @@ namespace STORE_Improvised
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void account_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
 
         }
