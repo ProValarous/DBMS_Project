@@ -133,5 +133,18 @@ namespace STORE_Improvised
         {
 
         }
+
+        private void walletAmount_Click(object sender, EventArgs e)
+        {
+            SqlConnection con = new SqlConnection(conString);
+            con.Open();
+
+            this.Hide();
+            Form5 f = new Form5();
+
+            f.account.Text = account.Text;
+            //switch form
+            f.Show();
+        }
     }
 }

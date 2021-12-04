@@ -144,6 +144,7 @@ namespace STORE_Improvised
             this.walletAmount.Size = new System.Drawing.Size(77, 21);
             this.walletAmount.TabIndex = 22;
             this.walletAmount.Text = "$635,354";
+            this.walletAmount.Click += new System.EventHandler(this.walletAmount_Click);
             // 
             // dataGrid
             // 
