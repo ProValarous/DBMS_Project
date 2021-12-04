@@ -138,7 +138,7 @@ namespace STORE_Improvised
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
             this.Name = "Form4";
-            this.Text = "Form4";
+            this.Text = "Add Game";
             this.ResumeLayout(false);
             this.PerformLayout();
 
