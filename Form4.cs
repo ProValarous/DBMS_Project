@@ -26,5 +26,10 @@ namespace STORE_Improvised
         {
 
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
