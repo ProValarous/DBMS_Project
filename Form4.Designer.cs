@@ -30,12 +30,15 @@ namespace STORE_Improvised
         private void InitializeComponent()
         {
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.SuspendLayout();
             // 
             // Form4
             // 
             this.ClientSize = new System.Drawing.Size(763, 510);
 =======
+=======
+>>>>>>> parent of 0f0b9db (form 4 ui improved)
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -139,9 +142,12 @@ namespace STORE_Improvised
 =======
         private System.Windows.Forms.TextBox textBox3;
 <<<<<<< HEAD
+<<<<<<< HEAD
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
 >>>>>>> 1dd80dcdeb2d8e45cabba9a155a31d204c7a4abd
+=======
+>>>>>>> parent of 0f0b9db (form 4 ui improved)
 =======
 >>>>>>> parent of 0f0b9db (form 4 ui improved)
     }
