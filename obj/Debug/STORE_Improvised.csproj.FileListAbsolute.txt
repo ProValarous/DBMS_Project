@@ -24,3 +24,5 @@ C:\Users\Mutaba\source\repos\STORE_Improvised\obj\Debug\STORE_Improvised.exe
 C:\Users\Mutaba\source\repos\STORE_Improvised\obj\Debug\STORE_Improvised.pdb
 C:\Users\Mutaba\source\repos\STORE_Improvised\obj\Debug\STORE_Improvised.Form4.resources
 C:\Users\Mutaba\source\repos\STORE_Improvised\obj\Debug\STORE_Improvised.Form5.resources
+C:\Users\IDEAL COMPUTER'S\Documents\GitHub\STORE_Improvised\obj\Debug\STORE_Improvised.Form4.resources
+C:\Users\IDEAL COMPUTER'S\Documents\GitHub\STORE_Improvised\obj\Debug\STORE_Improvised.Form5.resources
