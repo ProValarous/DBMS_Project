@@ -68,11 +68,11 @@ namespace STORE_Improvised
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Leelawadee UI Semilight", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.GhostWhite;
             this.label6.Location = new System.Drawing.Point(40, 26);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(95, 37);
+            this.label6.Size = new System.Drawing.Size(97, 35);
             this.label6.TabIndex = 18;
             this.label6.Text = "STORE";
             this.label6.Click += new System.EventHandler(this.label6_Click);
