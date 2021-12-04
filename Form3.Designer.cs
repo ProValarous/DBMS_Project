@@ -75,7 +75,7 @@ namespace STORE_Improvised
             this.account.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.account.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.account.LinkColor = System.Drawing.Color.GhostWhite;
-            this.account.Location = new System.Drawing.Point(822, 38);
+            this.account.Location = new System.Drawing.Point(445, 34);
             this.account.Name = "account";
             this.account.Size = new System.Drawing.Size(84, 19);
             this.account.TabIndex = 18;
@@ -97,7 +97,7 @@ namespace STORE_Improvised
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(393, 80);
+            this.button1.Location = new System.Drawing.Point(289, 34);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 23;
@@ -125,7 +125,7 @@ namespace STORE_Improvised
             // 
             // toStore
             // 
-            this.toStore.Location = new System.Drawing.Point(809, 443);
+            this.toStore.Location = new System.Drawing.Point(432, 65);
             this.toStore.Name = "toStore";
             this.toStore.Size = new System.Drawing.Size(97, 38);
             this.toStore.TabIndex = 27;
